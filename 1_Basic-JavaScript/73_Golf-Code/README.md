@@ -1,0 +1,6 @@
+<div class="challenge-instructions basic-javascript"><div><section id="description">
+<p>In the game of <a href="https://en.wikipedia.org/wiki/Golf">golf</a>, each hole has a <code>par</code>, meaning, the average number of <code>strokes</code> a golfer is expected to make in order to sink the ball in the hole to complete the play. Depending on how far above or below <code>par</code> your <code>strokes</code> are, there is a different nickname.</p>
+<p>Your function will be passed <code>par</code> and <code>strokes</code> arguments. Return the correct string according to this table which lists the strokes in order of priority; top (highest) to bottom (lowest):</p>
+<table class="table table-striped"><thead><tr><th>Strokes</th><th>Return</th></tr></thead><tbody><tr><td>1</td><td>"Hole-in-one!"</td></tr><tr><td>&lt;= par - 2</td><td>"Eagle"</td></tr><tr><td>par - 1</td><td>"Birdie"</td></tr><tr><td>par</td><td>"Par"</td></tr><tr><td>par + 1</td><td>"Bogey"</td></tr><tr><td>par + 2</td><td>"Double Bogey"</td></tr><tr><td>&gt;= par + 3</td><td>"Go Home!"</td></tr></tbody></table>
+<p><code>par</code> and <code>strokes</code> will always be numeric and positive. We have added an array of all the names for your convenience.</p>
+</section></div><hr/></div>

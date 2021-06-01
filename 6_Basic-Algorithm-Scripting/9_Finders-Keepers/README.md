@@ -1,0 +1,3 @@
+<div class="challenge-instructions basic-algorithm-scripting"><div><section id="description">
+<p>Create a function that looks through an array <code>arr</code> and returns the first element in it that passes a 'truth test'. This means that given an element <code>x</code>, the 'truth test' is passed if <code>func(x)</code> is <code>true</code>. If no element passes the test, return <code>undefined</code>.</p>
+</section></div><hr/></div>

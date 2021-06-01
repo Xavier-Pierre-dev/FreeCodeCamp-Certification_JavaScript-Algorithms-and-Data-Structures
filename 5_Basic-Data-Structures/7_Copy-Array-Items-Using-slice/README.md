@@ -1,0 +1,11 @@
+<div class="challenge-instructions basic-data-structures"><div><section id="description">
+<p>The next method we will cover is <code>slice()</code>. Rather than modifying an array, <code>slice()</code> copies or <em>extracts</em> a given number of elements to a new array, leaving the array it is called upon untouched. <code>slice()</code> takes only 2 parameters — the first is the index at which to begin extraction, and the second is the index at which to stop extraction (extraction will occur up to, but not including the element at this index). Consider this:</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">let</span> weatherConditions <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'rain'</span><span class="token punctuation">,</span> <span class="token string">'snow'</span><span class="token punctuation">,</span> <span class="token string">'sleet'</span><span class="token punctuation">,</span> <span class="token string">'hail'</span><span class="token punctuation">,</span> <span class="token string">'clear'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> todaysWeather <span class="token operator">=</span> weatherConditions<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p><code>todaysWeather</code> would have the value <code>['snow', 'sleet']</code>, while <code>weatherConditions</code> would still have <code>['rain', 'snow', 'sleet', 'hail', 'clear']</code>.</p>
+<p>In effect, we have created a new array by extracting elements from an existing array.</p>
+</section></div><hr/><div><section id="instructions">
+<p>We have defined a function, <code>forecast</code>, that takes an array as an argument. Modify the function using <code>slice()</code> to extract information from the argument array and return a new array that contains the string elements <code>warm</code> and <code>sunny</code>.</p>
+</section></div><hr/></div>

@@ -1,0 +1,5 @@
+<div class="challenge-instructions basic-javascript"><div><section id="description">
+<p>Continuing from the previous challenge, we provide you another opportunity to create a recursive function to solve a problem.</p>
+</section></div><hr/><div><section id="instructions">
+<p>We have defined a function named <code>rangeOfNumbers</code> with two parameters. The function should return an array of integers which begins with a number represented by the <code>startNum</code> parameter and ends with a number represented by the <code>endNum</code> parameter. The starting number will always be less than or equal to the ending number. Your function must use recursion by calling itself and not use loops of any kind. It should also work for cases where both <code>startNum</code> and <code>endNum</code> are the same.</p>
+</section></div><hr/></div>

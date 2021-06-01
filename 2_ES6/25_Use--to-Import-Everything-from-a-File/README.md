@@ -1,0 +1,11 @@
+<div class="challenge-instructions es6"><div><section id="description">
+<p>Suppose you have a file and you wish to import all of its contents into the current file. This can be done with the <code>import * as</code> syntax. Here's an example where the contents of a file named <code>math_functions.js</code> are imported into a file in the same directory:</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> myMathModule <span class="token keyword">from</span> <span class="token string">"./math_functions.js"</span><span class="token punctuation">;</span>
+</code></pre>
+<p>The above <code>import</code> statement will create an object called <code>myMathModule</code>. This is just a variable name, you can name it anything. The object will contain all of the exports from <code>math_functions.js</code> in it, so you can access the functions like you would any other object property. Here's how you can use the <code>add</code> and <code>subtract</code> functions that were imported:</p>
+<pre class="language-js"><code class="language-js">myMathModule<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+myMathModule<span class="token punctuation">.</span><span class="token function">subtract</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+</section></div><hr/><div><section id="instructions">
+<p>The code in this file requires the contents of the file: <code>string_functions.js</code>, that is in the same directory as the current file. Use the <code>import * as</code> syntax to import everything from the file into an object called <code>stringFunctions</code>.</p>
+</section></div><hr/></div>

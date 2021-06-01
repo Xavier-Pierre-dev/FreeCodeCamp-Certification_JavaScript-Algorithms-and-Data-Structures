@@ -1,0 +1,11 @@
+<div class="challenge-instructions basic-data-structures"><div><section id="description">
+<p>Another huge advantage of the <dfn>spread</dfn> operator is the ability to combine arrays, or to insert all the elements of one array into another, at any index. With more traditional syntaxes, we can concatenate arrays, but this only allows us to combine arrays at the end of one, and at the start of another. Spread syntax makes the following operation extremely simple:</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">let</span> thisArray <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'sage'</span><span class="token punctuation">,</span> <span class="token string">'rosemary'</span><span class="token punctuation">,</span> <span class="token string">'parsley'</span><span class="token punctuation">,</span> <span class="token string">'thyme'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> thatArray <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'basil'</span><span class="token punctuation">,</span> <span class="token string">'cilantro'</span><span class="token punctuation">,</span> <span class="token operator">...</span>thisArray<span class="token punctuation">,</span> <span class="token string">'coriander'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre>
+<p><code>thatArray</code> would have the value <code>['basil', 'cilantro', 'sage', 'rosemary', 'parsley', 'thyme', 'coriander']</code>.</p>
+<p>Using spread syntax, we have just achieved an operation that would have been more complex and more verbose had we used traditional methods.</p>
+</section></div><hr/><div><section id="instructions">
+<p>We have defined a function <code>spreadOut</code> that returns the variable <code>sentence</code>. Modify the function using the <dfn>spread</dfn> operator so that it returns the array <code>['learning', 'to', 'code', 'is', 'fun']</code>.</p>
+</section></div><hr/></div>

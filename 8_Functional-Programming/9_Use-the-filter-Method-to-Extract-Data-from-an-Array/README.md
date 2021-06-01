@@ -1,0 +1,18 @@
+<div class="challenge-instructions functional-programming"><div><section id="description">
+<p>Another useful array function is <code>Array.prototype.filter()</code>, or simply <code>filter()</code>.</p>
+<p><code>filter</code> calls a function on each element of an array and returns a new array containing only the elements for which that function returns <code>true</code>. In other words, it filters the array, based on the function passed to it. Like <code>map</code>, it does this without needing to modify the original array.</p>
+<p>The callback function accepts three arguments. The first argument is the current element being processed. The second is the index of that element and the third is the array upon which the <code>filter</code> method was called.</p>
+<p>See below for an example using the <code>filter</code> method on the <code>users</code> array to return a new array containing only the users under the age of 30. For simplicity, the example only uses the first argument of the callback.</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">const</span> users <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span> name<span class="token operator">:</span> <span class="token string">'John'</span><span class="token punctuation">,</span> age<span class="token operator">:</span> <span class="token number">34</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span> name<span class="token operator">:</span> <span class="token string">'Amy'</span><span class="token punctuation">,</span> age<span class="token operator">:</span> <span class="token number">20</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span> name<span class="token operator">:</span> <span class="token string">'camperCat'</span><span class="token punctuation">,</span> age<span class="token operator">:</span> <span class="token number">10</span> <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> usersUnder30 <span class="token operator">=</span> users<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token parameter">user</span> <span class="token operator">=&gt;</span> user<span class="token punctuation">.</span>age <span class="token operator">&lt;</span> <span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>usersUnder30<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+</code></pre>
+<p>The console would display the value <code>[ { name: 'Amy', age: 20 }, { name: 'camperCat', age: 10 } ]</code>.</p>
+</section></div><hr/><div><section id="instructions">
+<p>The variable <code>watchList</code> holds an array of objects with information on several movies. Use a combination of <code>filter</code> and <code>map</code> on <code>watchList</code> to assign a new array of objects with only <code>title</code> and <code>rating</code> keys. The new array should only include objects where <code>imdbRating</code> is greater than or equal to 8.0. Note that the <code>rating</code> values are saved as strings in the object and you may need to convert them into numbers to perform mathematical operations on them.</p>
+</section></div><hr/></div>

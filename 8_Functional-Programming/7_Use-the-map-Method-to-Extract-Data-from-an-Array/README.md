@@ -1,0 +1,21 @@
+<div class="challenge-instructions functional-programming"><div><section id="description">
+<p>So far we have learned to use pure functions to avoid side effects in a program. Also, we have seen the value in having a function only depend on its input arguments.</p>
+<p>This is only the beginning. As its name suggests, functional programming is centered around a theory of functions.</p>
+<p>It would make sense to be able to pass them as arguments to other functions, and return a function from another function. Functions are considered <dfn>first class objects</dfn> in JavaScript, which means they can be used like any other object. They can be saved in variables, stored in an object, or passed as function arguments.</p>
+<p>Let's start with some simple array functions, which are methods on the array object prototype. In this exercise we are looking at <code>Array.prototype.map()</code>, or more simply <code>map</code>.</p>
+<p>The <code>map</code> method iterates over each item in an array and returns a new array containing the results of calling the callback function on each element. It does this without mutating the original array.</p>
+<p>When the callback is used, it is passed three arguments. The first argument is the current element being processed. The second is the index of that element and the third is the array upon which the <code>map</code> method was called.</p>
+<p>See below for an example using the <code>map</code> method on the <code>users</code> array to return a new array containing only the names of the users as elements. For simplicity, the example only uses the first argument of the callback.</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">const</span> users <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span> name<span class="token operator">:</span> <span class="token string">'John'</span><span class="token punctuation">,</span> age<span class="token operator">:</span> <span class="token number">34</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span> name<span class="token operator">:</span> <span class="token string">'Amy'</span><span class="token punctuation">,</span> age<span class="token operator">:</span> <span class="token number">20</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span> name<span class="token operator">:</span> <span class="token string">'camperCat'</span><span class="token punctuation">,</span> age<span class="token operator">:</span> <span class="token number">10</span> <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> names <span class="token operator">=</span> users<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">user</span> <span class="token operator">=&gt;</span> user<span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>names<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>The console would display the value <code> [ 'John', 'Amy', 'camperCat' ]</code>.</p>
+</section></div><hr/><div><section id="instructions">
+<p>The <code>watchList</code> array holds objects with information on several movies. Use <code>map</code> on <code>watchList</code> to assign a new array of objects with only <code>title</code> and <code>rating</code> keys to the <code>ratings</code> variable. The code in the editor currently uses a <code>for</code> loop to do this, so you should replace the loop functionality with your <code>map</code> expression.</p>
+</section></div><hr/></div>

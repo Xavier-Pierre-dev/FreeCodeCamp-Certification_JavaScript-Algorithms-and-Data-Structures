@@ -1,0 +1,13 @@
+<div class="challenge-instructions basic-data-structures"><div><section id="description">
+<p>Since arrays can be changed, or <em>mutated</em>, at any time, there's no guarantee about where a particular piece of data will be on a given array, or if that element even still exists. Luckily, JavaScript provides us with another built-in method, <code>indexOf()</code>, that allows us to quickly and easily check for the presence of an element on an array. <code>indexOf()</code> takes an element as a parameter, and when called, it returns the position, or index, of that element, or <code>-1</code> if the element does not exist on the array.</p>
+<p>For example:</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">let</span> fruits <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'apples'</span><span class="token punctuation">,</span> <span class="token string">'pears'</span><span class="token punctuation">,</span> <span class="token string">'oranges'</span><span class="token punctuation">,</span> <span class="token string">'peaches'</span><span class="token punctuation">,</span> <span class="token string">'pears'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+fruits<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">'dates'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+fruits<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">'oranges'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+fruits<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">'pears'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p><code>indexOf('dates')</code> returns <code>-1</code>, <code>indexOf('oranges')</code> returns <code>2</code>, and <code>indexOf('pears')</code> returns <code>1</code> (the first index at which each element exists).</p>
+</section></div><hr/><div><section id="instructions">
+<p><code>indexOf()</code> can be incredibly useful for quickly checking for the presence of an element on an array. We have defined a function, <code>quickCheck</code>, that takes an array and an element as arguments. Modify the function using <code>indexOf()</code> so that it returns <code>true</code> if the passed element exists on the array, and <code>false</code> if it does not.</p>
+</section></div><hr/></div>

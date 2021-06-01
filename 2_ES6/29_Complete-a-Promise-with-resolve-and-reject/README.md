@@ -1,0 +1,14 @@
+<div class="challenge-instructions es6"><div><section id="description">
+<p>A promise has three states: <code>pending</code>, <code>fulfilled</code>, and <code>rejected</code>. The promise you created in the last challenge is forever stuck in the <code>pending</code> state because you did not add a way to complete the promise. The <code>resolve</code> and <code>reject</code> parameters given to the promise argument are used to do this. <code>resolve</code> is used when you want your promise to succeed, and <code>reject</code> is used when you want it to fail. These are methods that take an argument, as seen below.</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">const</span> myPromise <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span> reject</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span>condition here<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">resolve</span><span class="token punctuation">(</span><span class="token string">"Promise was fulfilled"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token function">reject</span><span class="token punctuation">(</span><span class="token string">"Promise was rejected"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>The example above uses strings for the argument of these functions, but it can really be anything. Often, it might be an object, that you would use data from, to put on your website or elsewhere.</p>
+</section></div><hr/><div><section id="instructions">
+<p>Make the promise handle success and failure. If <code>responseFromServer</code> is <code>true</code>, call the <code>resolve</code> method to successfully complete the promise. Pass <code>resolve</code> a string with the value <code>We got the data</code>. If <code>responseFromServer</code> is <code>false</code>, use the <code>reject</code> method instead and pass it the string: <code>Data not received</code>.</p>
+</section></div><hr/></div>

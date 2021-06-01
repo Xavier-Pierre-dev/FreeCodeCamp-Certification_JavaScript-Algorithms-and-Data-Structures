@@ -1,0 +1,5 @@
+<div class="challenge-instructions debugging"><div><section id="description">
+<p>Continuing the discussion on calling functions, the next bug to watch out for is when a function's arguments are supplied in the incorrect order. If the arguments are different types, such as a function expecting an array and an integer, this will likely throw a runtime error. If the arguments are the same type (all integers, for example), then the logic of the code won't make sense. Make sure to supply all required arguments, in the proper order to avoid these issues.</p>
+</section></div><hr/><div><section id="instructions">
+<p>The function <code>raiseToPower</code> raises a base to an exponent. Unfortunately, it's not called properly - fix the code so the value of <code>power</code> is the expected 8.</p>
+</section></div><hr/></div>

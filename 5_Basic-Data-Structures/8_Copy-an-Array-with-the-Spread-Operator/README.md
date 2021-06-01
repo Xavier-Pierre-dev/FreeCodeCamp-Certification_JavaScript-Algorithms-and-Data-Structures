@@ -1,0 +1,10 @@
+<div class="challenge-instructions basic-data-structures"><div><section id="description">
+<p>While <code>slice()</code> allows us to be selective about what elements of an array to copy, among several other useful tasks, ES6's new <dfn>spread operator</dfn> allows us to easily copy <em>all</em> of an array's elements, in order, with a simple and highly readable syntax. The spread syntax simply looks like this: <code>...</code></p>
+<p>In practice, we can use the spread operator to copy an array like so:</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">let</span> thisArray <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token keyword">undefined</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> thatArray <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token operator">...</span>thisArray<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre>
+<p><code>thatArray</code> equals <code>[true, true, undefined, false, null]</code>. <code>thisArray</code> remains unchanged and <code>thatArray</code> contains the same elements as <code>thisArray</code>.</p>
+</section></div><hr/><div><section id="instructions">
+<p>We have defined a function, <code>copyMachine</code> which takes <code>arr</code> (an array) and <code>num</code> (a number) as arguments. The function is supposed to return a new array made up of <code>num</code> copies of <code>arr</code>. We have done most of the work for you, but it doesn't work quite right yet. Modify the function using spread syntax so that it works correctly (hint: another method we have already covered might come in handy here!).</p>
+</section></div><hr/></div>
