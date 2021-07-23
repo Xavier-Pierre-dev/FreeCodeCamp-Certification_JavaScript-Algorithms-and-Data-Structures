@@ -12,5 +12,3 @@ multi-line comment */</span>
 </section></div><hr/><div><section id="instructions">
 <p>Try creating one of each type of comment.</p>
 </section></div><hr/></div>
-
-<iframe width="100%" height="475" src="https://dotnetfiddle.net/Widget/CsCons" frameborder="0"></iframe>
